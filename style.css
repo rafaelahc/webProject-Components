@@ -1,27 +1,12 @@
 body {
-    background: url(./img/alex-grodkiewicz-cSwO_dTgzq4-unsplash.jpg) no-repeat;
+    background: url(./img/luke-dean-weymark-o_rKNRoNz8s-unsplash.jpg) no-repeat;
     background-size: cover;
     overflow: hidden;
 }
 
-/* body {
-    background: url(./img/zachary-kyra-derksen-f7PF7yGqpEM-unsplash.jpg) no-repeat;
-    background-size: 100% 100vh;
-    overflow: hidden;
-} */
-
-
-/* body {
-    background: url(./img/winterbg.jpg) no-repeat;
-    background-size: 100% 100vh;
-    overflow: hidden;
-} */
 
 .container {
     position: relative;
-    /* width: 100%;
-    height: 100vh;
-    overflow: hidden; */
 }
 
 .flex {
@@ -40,13 +25,14 @@ body {
 } */
 
 /* .snow {
-    color: rgb(238, 241, 241);
+    color: #eef1f1;
     font-size: 1rem;
     height: 20px;
     animation: fall 2s linear forwards infinite;
     animation-delay: 1s;
 } */
 
+/* 
 .flower {
     position: abosulte;
     width: 30px;
@@ -54,8 +40,34 @@ body {
     animation: flowers 2s linear forwards;
     animation-delay: 1s;
     opacity: 0;
+
+} */
+
+.sol {
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    border-radius: 100%;
+    background: linear-gradient(to bottom,  #FECC51, #FCB033, #FA8607);
+    filter: drop-shadow(5px 5px 0.75rem #be9628);
+    animation: sun 2s ease-in 1s alternate both running ;
 }
 
+.sun {
+    width: 250px;
+    height: 250px;
+}
+
+@keyframes sun {
+    0% {
+        transform: translateX(60px) translateY(-30vh) rotate(0deg);
+        fill: #f1c40f; 
+        }
+    100% {
+        transform: translateX(60px) translateY(5vh) rotate(180deg);
+        fill: #f1c40f; stroke:#f1c40f;
+    }
+}
 
 @keyframes fallAndSpin {
     0% {
@@ -82,17 +94,20 @@ body {
 @keyframes flowers{
     0% {
       top: -10%;
-      opacity: 1; 
+      opacity: 1;
       transform: translateY(-10vh) rotate(0deg);
     }
     100% {
       top: calc(100vh - 30px);
       opacity: 1;
       transform: translateY(100vh) rotate(180deg);
+    
     }
-  }
+}
 
 
+/* 
+  animation: 3s ease-in 1s infinite reverse both running slidein; */
 
   /* Outono */
 /* body {
@@ -100,16 +115,20 @@ body {
     background-size: cover;
     overflow: hidden;
 } */
-
   
   /* Inverno */
-  /* body {
+/* body {
     background: url(./img/winterbg.jpg) no-repeat;
     background-size: 100% 100vh;
     overflow: hidden;
 } */
 
-
-
   /* Primavera */
+  /* body {
+    background: url(./img/alex-grodkiewicz-cSwO_dTgzq4-unsplash.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+} */
+
+
   /* Verão */
