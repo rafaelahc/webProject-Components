@@ -25,7 +25,7 @@ const seasons = [
 
   {
     name: "Summer",
-    background: "./img/luke-dean-weymark-o_rKNRoNz8s-unsplash.jpg"
+    background: "./img/summerbg.jpg"
   },
 ];
 
