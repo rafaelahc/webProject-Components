@@ -1,13 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
 body {
-    background: url(./img/luke-dean-weymark-o_rKNRoNz8s-unsplash.jpg) no-repeat;
-    background-size: cover;
     overflow: hidden;
 }
 
-
-.container {
-    position: relative;
+.button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 999;
 }
+
+#mainBtn {
+    min-width: 100px;
+    padding: 10px 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    background: #88490e;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+#mainBtn:hover {
+    background: #683607;
+    color: #fff;
+}
+
 
 .flex {
     display: flex;
@@ -16,58 +44,62 @@ body {
     height: 100vh;
 }
 
-/* .leaf {
+.leaf {
     color: rgb(224, 113, 39);
     font-size: 2rem;
     padding: 1rem;
     animation: fallAndSpin 2s linear forwards infinite;
     animation-delay: 1s;
-} */
+} 
 
-/* .snow {
+ .snow {
     color: #eef1f1;
     font-size: 1rem;
     height: 20px;
     animation: fall 2s linear forwards infinite;
     animation-delay: 1s;
-} */
+} 
 
-/* 
+ 
 .flower {
     position: abosulte;
     width: 30px;
     height: 30px;
-    animation: flowers 2s linear forwards;
+    animation: flowers 2s linear forwards infinite;
     animation-delay: 1s;
     opacity: 0;
+}
 
-} */
-
-.sol {
+#sun {
+    position: absolute;
+    top: 10px;
     width: 200px;
     height: 200px;
     margin-left: 50px;
     border-radius: 100%;
-    background: linear-gradient(to bottom,  #FECC51, #FCB033, #FA8607);
+    /* background: linear-gradient(to bottom,  #FECC51, #FCB033, #FA8607); */
+    background: #ffff77;
+    box-shadow: 0 0 50px #ffff77;
     filter: drop-shadow(5px 5px 0.75rem #be9628);
     animation: sun 2s ease-in 1s alternate both running ;
 }
 
-.sun {
-    width: 250px;
-    height: 250px;
+.hidden {
+    display: none;
 }
+
+
 
 @keyframes sun {
     0% {
         transform: translateX(60px) translateY(-30vh) rotate(0deg);
-        fill: #f1c40f; 
         }
     100% {
         transform: translateX(60px) translateY(5vh) rotate(180deg);
-        fill: #f1c40f; stroke:#f1c40f;
+
     }
 }
+
 
 @keyframes fallAndSpin {
     0% {
@@ -84,12 +116,12 @@ body {
 
 @keyframes fall {
     from {
-      transform: translateY(-10vh) rotate(0deg);
+      transform: translateY(-10vh);
     }
     to {
-      transform: translateY(100vh) rotate(180deg);
+      transform: translateY(100vh);
     }
-}
+  }
 
 @keyframes flowers{
     0% {
@@ -106,29 +138,3 @@ body {
 }
 
 
-/* 
-  animation: 3s ease-in 1s infinite reverse both running slidein; */
-
-  /* Outono */
-/* body {
-    background: url(./img/autumnbg.jpg) no-repeat;
-    background-size: cover;
-    overflow: hidden;
-} */
-  
-  /* Inverno */
-/* body {
-    background: url(./img/winterbg.jpg) no-repeat;
-    background-size: 100% 100vh;
-    overflow: hidden;
-} */
-
-  /* Primavera */
-  /* body {
-    background: url(./img/alex-grodkiewicz-cSwO_dTgzq4-unsplash.jpg) no-repeat;
-    background-size: cover;
-    overflow: hidden;
-} */
-
-
-  /* Verão */
