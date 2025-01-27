@@ -77,7 +77,6 @@ body {
     height: 200px;
     margin-left: 50px;
     border-radius: 100%;
-    /* background: linear-gradient(to bottom,  #FECC51, #FCB033, #FA8607); */
     background: #ffff77;
     box-shadow: 0 0 50px #ffff77;
     filter: drop-shadow(5px 5px 0.75rem #be9628);

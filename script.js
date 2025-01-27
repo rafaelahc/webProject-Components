@@ -1,16 +1,12 @@
-// const container = document.querySelector(".container");
 let btn = document.getElementById("mainBtn");
+let snowContainer = document.getElementById("snow-container");
+let intervalId;
+let lastSeason;
 
 //ícones e imagens
 const leaf = document.querySelector(".leaf");
 const snow = document.querySelector(".snow");
 const flower = document.querySelectorAll(".flower");
-
-let snowContainer = document.getElementById("snow-container");
-
-let intervalId;
-
-let lastSeason;
 
 // Array de objetos
 const seasons = [
@@ -19,7 +15,7 @@ const seasons = [
     background: "./img/springbg1.jpg",
   },
 
-  { name: "Autumn", background: "./img/autumnbg.jpg"},
+  { name: "Autumn", background: "./img/autumnbg_1.jpg"},
 
   { name: "Winter", background: "./img/winterbg.jpg"},
 
@@ -29,6 +25,7 @@ const seasons = [
   },
 ];
 
+//Função para não repetir as estações no click
 function getRandomSeasons(lastSeasonName) {
   const seasonsFiltered = seasons.filter(
     (season) => season.name !== lastSeasonName
@@ -42,6 +39,7 @@ function getRandomSeasons(lastSeasonName) {
   return randomSeason;
 }
 
+//Evento do botão
 btn.addEventListener("click", function () {
   let randomSeason = getRandomSeasons(lastSeason);
   lastSeason = randomSeason.name;
@@ -104,7 +102,7 @@ btn.addEventListener("click", function () {
 });
 
 
-
+//Criar mais ícones
 function createMoreIcons(seasonName) {
   switch (seasonName) {
     case "Autumn":
